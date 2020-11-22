@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <title>Urban Fashion - Home</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <img class="logo" src="./images/logo.png" alt="Urban Fashion">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Category</a></li>
+                </ul>
+                <div class="right-menu">
+                    <img src="./images/cart.png" class="cart" alt="cart">
+                    <i onclick="toggleSideDrawer()" class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </header>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" onclick="toggleSideDrawer()" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Collections</a>
+            <a href="#">Category</a>
+        </div>
+            <div class="content">
+                <button>2020 Collections</button>
+                <h1>You should always feel pretty</h1>
+                <p>Clothes that are sure to heat up your winter</p>
+                <div class="arrows-container">
+                    <img src="./images/back-arrow.png" alt="back-arrow">
+                    <img src="./images/next-arrow.png" alt="next-arrow">
+                </div>
+            </div>
+    </div>
+
+    <script>
+        function toggleSideDrawer(){
+            document.getElementById("mySidenav").classList.toggle("toggleSideDrawer");
+        }
+    </script>
+</body>
+</html>

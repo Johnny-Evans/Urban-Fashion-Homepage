@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding: 0 1.2rem;
+    width: 100%;
+    height: 100vh;
+    background-image: url('./images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: hidden;
+    flex-wrap: nowrap;
+    padding-top: 1.3rem;
+}
+
+.navbar ul {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+}
+
+.navbar ul li {
+    margin-left: 1.4rem;
+    margin-right: 1.4rem;
+    z-index: 1;
+}
+
+.navbar ul li a{
+    color: #0a204d;
+    padding-bottom: 0.3rem;
+    font-size: 1.2rem;
+}
+
+.navbar ul li a:hover{
+    border-bottom: 2px solid #041333;
+}
+
+.navbar .right-menu {
+    display: flex;
+    align-items: center;
+}
+
+.navbar  .logo{
+    object-fit: contain;
+    width: 10rem;
+}
+
+.navbar .right-menu .cart {
+    object-fit: contain;
+    width: 2.6rem;
+}
+
+.navbar .right-menu .fa-bars {
+    font-size: 32px;
+    color: #0a204d;
+    position: fixed;
+    right: 32px;
+    display: none;
+}
+
+.navbar .right-menu .fa-bars:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.logo:hover, .cart:hover{
+    cursor: pointer;
+}
+
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color:rgba(167, 235, 232, 0.8); 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color:  #0a204d;
+    text-align: center;
+    line-height: 6rem;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    opacity: 0.6;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.toggleSideDrawer{
+      width: 100%;
+}
+
+.content{
+    margin-top: 10rem;
+    margin-left: 6rem;
+}
+
+.content button{
+    display: inline-block;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.4rem;
+    background: linear-gradient(45deg, #87adfe, #ff77cd);
+    z-index: 5;
+}
+
+.content button:hover{
+    cursor: pointer;
+    
+}
+
+.content h1 {
+    margin: 1.6rem 0;
+    color: #144c87;
+    font-size: 2.7rem;
+}
+
+.content p {
+    margin: 1.2rem 0;
+    color: #144c87;
+    font-size: 1.3rem;
+}
+
+.arrows-container{
+    display: flex;
+    margin: 1.5rem 0;
+}
+
+.arrows-container img{
+    object-fit: contain;
+    width: 2.7rem;
+    margin-right: 1.2rem;
+}
+
+.arrows-container img:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+.footer{
+    text-align: center;
+    background-color:#d2f4f8;
+    padding: 1rem;
+    font-size: 1.1rem;
+    color: #144c87;
+}
+
+@media (max-width: 750px){
+    html{
+        font-size: 14px;
+    }
+
+    .content{
+        margin-top: 5rem;
+        margin-left: 2rem;
+    }
+
+    .content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .content p {
+        font-size: 1rem;
+    }
+
+    .navbar ul li {
+        margin-left: 1.1rem;
+        margin-right: 1.1rem;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .navbar .right-menu .cart {
+       display: none;
+    }
+
+    .navbar .right-menu .fa-bars {
+        display: block;
+    }
+}
+
+@media (min-height: 400px){
+    .content{
+        margin-top: 8rem;
+    }   
+}
+
+@media (min-height: 720px){
+    .content{
+        margin-top: 13rem;
+    }
+}
